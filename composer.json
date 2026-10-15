@@ -1,0 +1,12 @@
+{
+  "name": "owner888/pig-locale-th",
+  "description": "Thai (ไทย) language pack for pig's web UI",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["pig-package", "pig", "locale", "i18n", "th"],
+  "extra": {
+    "pig": {
+      "extensions": ["./extensions/locale-th.php"]
+    }
+  }
+}
