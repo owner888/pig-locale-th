@@ -11,10 +11,10 @@ use Pig\CodingAgent\Extensions\ExtensionApi;
  * the language settings can import by hand — and this extension registers them, so
  * `pig install` is the whole setup. Keys the pack does not have fall back to English.
  */
-return function (ExtensionApi $pi): void {
+return function (ExtensionApi $pig): void {
     $file = dirname(__DIR__) . '/th.json';
     $data = json_decode((string) file_get_contents($file), true, flags: JSON_THROW_ON_ERROR);
     unset($data['_meta']);
 
-    $pi->registerLocale('th', 'ไทย', $data);
+    $pig->registerLocale('th', 'ไทย', $data);
 };
